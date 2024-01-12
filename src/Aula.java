@@ -11,8 +11,9 @@ public class Aula {
             //operadores - OK
             //metodos - OK
             //casting
-        //tratamento de erros
+        //estruturas de repeticao
         //vetor e matriz
+        //tratamento de erros
         //debugging
         //git
 

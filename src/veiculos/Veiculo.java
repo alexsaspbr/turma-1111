@@ -32,7 +32,7 @@ public class Veiculo {
             par = true;
         } else {
             par = false;
-        }á
+        }
               // condicao ? (valor condicao verdadeira) : (valor condicao falsa)
         par = 10 % 2 == 0 ? true : false;
 
