@@ -10,9 +10,11 @@ public class Aula {
             //tipos - OK
             //operadores - OK
             //metodos - OK
-            //casting
-        //estruturas de repeticao
-        //vetor e matriz
+            //casting - OK
+        //estruturas de repeticao - OK
+        //array e matriz
+        //collections
+        //sobrescrita
         //tratamento de erros
         //debugging
         //git
