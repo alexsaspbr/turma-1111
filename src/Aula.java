@@ -12,12 +12,13 @@ public class Aula {
             //metodos - OK
             //casting - OK
         //estruturas de repeticao - OK
-        //array e matriz
+        //array e matriz - OK
         //collections
         //sobrescrita
         //tratamento de erros
         //debugging
         //git
+        //arquivos
 
         // estatico, acesso de qualquer lugar do projeto
         Veiculo veiculo = new Veiculo();
