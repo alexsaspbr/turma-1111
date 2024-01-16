@@ -13,9 +13,9 @@ public class Aula {
             //casting - OK
         //estruturas de repeticao - OK
         //array e matriz - OK
-        //collections
-        //sobrescrita
-        //tratamento de erros
+        //collections - OK
+        //sobrescrita - OK
+        //tratamento de erros - OK
         //debugging
         //git
         //arquivos
