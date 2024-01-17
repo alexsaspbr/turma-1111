@@ -1,18 +1,14 @@
 package colecoes;
 
 public class Item {
-
-    private Item anterior;
     private Integer valor;
 
     private Item proximo;
 
-    public Item getAnterior() {
-        return anterior;
-    }
+    public Item(){}
 
-    public void setAnterior(Item anterior) {
-        this.anterior = anterior;
+    public Item(int valor) {
+        this.valor = valor;
     }
 
     public Integer getValor() {
