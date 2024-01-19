@@ -16,9 +16,10 @@ public class Aula {
         //collections - OK
         //sobrescrita - OK
         //tratamento de erros - OK
-        //debugging
+        //debugging - OK
         //git
         //arquivos
+        //stream
 
         // estatico, acesso de qualquer lugar do projeto
         Veiculo veiculo = new Veiculo();

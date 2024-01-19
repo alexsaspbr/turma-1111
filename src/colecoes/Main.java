@@ -9,7 +9,9 @@ public class Main {
         listaEncadeada.add(3);
         listaEncadeada.add(4);
         listaEncadeada.add(5);
+        listaEncadeada.remove(1);
         listaEncadeada.remove(3);
+        listaEncadeada.remove(5);
         listaEncadeada.imprimir();
     }
 

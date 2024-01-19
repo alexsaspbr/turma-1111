@@ -25,7 +25,6 @@ public class Colecoes {
 
         Item no1 = new Item();
         //primeira adicao
-        no1.setAnterior(null);
         no1.setValor(12);
         no1.setProximo(null);
 
@@ -34,7 +33,6 @@ public class Colecoes {
         //segunda adicao
         Item no2 = new Item();
 
-        no2.setAnterior(listaEncadeada);
         no2.setValor(25);
         listaEncadeada.setProximo(no2);
 
