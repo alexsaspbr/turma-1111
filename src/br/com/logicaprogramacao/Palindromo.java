@@ -1,6 +1,6 @@
 package br.com.logicaprogramacao;
 
-public class Palindrono {
+public class Palindromo {
 
     public String validarPalindromo(String palavra) {
         if (checarPalindromo(palavra.toLowerCase())) {
