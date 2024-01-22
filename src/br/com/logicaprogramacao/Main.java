@@ -1,5 +1,6 @@
 package br.com.logicaprogramacao;
 
+import br.com.logicaprogramacao.Palindrono;
 public class Main {
 
     public static void main(String[] args) {
@@ -7,10 +8,10 @@ public class Main {
         Palindrono palindrono = new Palindrono();
 
         //essa deve retornar que é palindromo
-        palindrono.validarPalindromo("arara");
+        System.out.println(palindrono.validarPalindromo("arara"));
 
         //essa deve retornar que não palindromo
-        palindrono.validarPalindromo("carro");
+        System.out.println(palindrono.validarPalindromo("carro"));
 
     }
 
