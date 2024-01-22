@@ -11,12 +11,13 @@ public class Palindromo {
     }
 
     private boolean checarPalindromo(String palavra) {
-        for (int i = 0; i < palavra.length() - 1; i++) {
-            for (int j = palavra.length() - 1; j > 0; j--) {
-                return palavra.charAt(i) != palavra.charAt(j) ? false : true;
+        int length = palavra.length();
+        for (int i = 0, j = length - 1; i < j; i++, j--) {
+            if (palavra.charAt(i) != palavra.charAt(j)) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
 }
