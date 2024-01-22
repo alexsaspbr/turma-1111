@@ -6,7 +6,6 @@ public class Main {
 
         Palindrono palindrono = new Palindrono();
 
-
         palindrono.validarPalindromo("arara");
         System.out.println(palindrono.validarPalindromo("arara"));
 

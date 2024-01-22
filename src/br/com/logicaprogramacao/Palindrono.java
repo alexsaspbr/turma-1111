@@ -13,6 +13,7 @@ public class Palindrono {
 
     private boolean checarPalindromo(String palavra) {
 
+
         int comprimento = palavra.length();
 
         for(int i = 0; i < comprimento / 2; i++) {
