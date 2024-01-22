@@ -1,18 +1,21 @@
 package br.com.logicaprogramacao;
 
-public class Palindrono {
+public class Palindrono{
+    public void validarPalindrono(String palavra){
 
-    public String validarPalindromo(String palavra) {
-        if (checarPalindromo(palavra)) {
-            return String.format("A palavra %s é um palíndromo");
-        } else {
-            return String.format("A palavra %s não é um palíndromo");
+            palavra = palavra.toLowerCase();
+
+            int tamanhoPalavra = palavra.length();
+            String isPalindrono = " ";
+
+            for (int i = 0; i < tamanhoPalavra / 2; i++) {
+                if (palavra.charAt(i) != palavra.charAt(tamanhoPalavra - 1 - i)) {
+                    isPalindrono = "Não é um palindrono";
+                }else {
+                    isPalindrono = "É um palindrono";
+                }
+            }
+        System.out.println(isPalindrono);
         }
     }
-
-    private boolean checarPalindromo(String palavra) {
-        //TODO implementar logica
-        return false;
-    }
-
 }
