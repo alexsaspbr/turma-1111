@@ -12,7 +12,9 @@ public class Palindrono {
 
     private boolean checarPalindromo(String palavra) {
         //TODO implementar logica
+
         return false;
     }
 
 }
+
