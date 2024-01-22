@@ -11,8 +11,15 @@ public class Palindrono {
     }
 
     private boolean checarPalindromo(String palavra) {
-        //TODO implementar logica
-        return false;
+        char[] caracteres = palavra.toCharArray();
+        int comprimento = caracteres.length;
+
+        for (int i = 0; i < comprimento / 2; i++) {
+            if (caracteres[i] != caracteres[comprimento - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }

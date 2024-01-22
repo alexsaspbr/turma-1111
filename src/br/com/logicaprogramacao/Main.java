@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //chama a classe palindro.java
         Palindrono palindrono = new Palindrono();
 
         //essa deve retornar que é palindromo
