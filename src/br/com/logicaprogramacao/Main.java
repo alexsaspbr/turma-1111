@@ -5,12 +5,15 @@ public class Main {
     public static void main(String[] args) {
 
         Palindrono palindrono = new Palindrono();
+        String resultado;
 
         //essa deve retornar que é palindromo
-        palindrono.validarPalindromo("arara");
+        resultado = palindrono.validarPalindromo("arara");
+        System.out.println(resultado);
 
         //essa deve retornar que não palindromo
-        palindrono.validarPalindromo("carro");
+        resultado = palindrono.validarPalindromo("carro");
+        System.out.println(resultado);
 
     }
 
