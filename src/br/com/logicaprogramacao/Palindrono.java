@@ -4,15 +4,21 @@ public class Palindrono {
 
     public String validarPalindromo(String palavra) {
         if (checarPalindromo(palavra)) {
-            return String.format("A palavra %s é um palíndromo");
+            return String.format("O texto \"%s\" é um palíndromo", palavra);
+
         } else {
-            return String.format("A palavra %s não é um palíndromo");
+            return String.format("O texto \"%s\" não é um palíndromo", palavra);
         }
     }
 
     private boolean checarPalindromo(String palavra) {
-        //TODO implementar logica
-        return false;
+
+        for (int i = 0; i < palavra.length(); i++) {
+            if (palavra.charAt(i) != palavra.charAt(palavra.length() - i - 1)) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
