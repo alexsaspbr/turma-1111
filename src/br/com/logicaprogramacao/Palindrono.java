@@ -4,12 +4,12 @@ public class Palindrono {
 
     public String validarPalindromo(String palavra) {
         if (checarPalindromo(palavra)) {
-            return String.format("A palavra '%s' é um palíndromo");
+            return String.format("A palavra '%s' é um palíndromo", palavra);
         } else {
-            return String.format("A palavra '%s' não é um palíndromo");
+            return String.format("A palavra '%s' não é um palíndromo", palavra);
         }
     }
-
+    
     private boolean checarPalindromo(String palavra) {
         char[] caracteres = palavra.toCharArray();
         int comprimento = caracteres.length;
