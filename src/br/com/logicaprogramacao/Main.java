@@ -13,7 +13,7 @@ public class Main {
         //essa deve retornar que é palindromo
         System.out.println(palindrono.validarPalindromo("arara"));
 
-        //essa deve retornar que não palindromo
+        //essa deve retornar que não é palindromo
         System.out.println(palindrono.validarPalindromo("carro"));
 
         //essa deve retornar que é palindromo
@@ -21,6 +21,9 @@ public class Main {
 
         //essa deve retornar que é palindromo
         System.out.println(palindrono.validarPalindromo("A cara rajada da jararaca"));
+
+        //essa deve retornar que não é palindromo
+        System.out.println(palindrono.validarPalindromo("santander coders 2023 2a"));
 
     }
 

@@ -1,6 +1,7 @@
 package br.com.logicaprogramacao;
 
-import java.util.Locale;
+import java.sql.Array;
+import java.util.Arrays;
 
 public class Palindrono {
 
@@ -17,10 +18,14 @@ public class Palindrono {
     private boolean checarPalindromo(String palavra) {
         String palavraPreparada = palavra.replaceAll(" ", "").toLowerCase();
 
-        StringBuilder revertePalavra = new StringBuilder(palavraPreparada).reverse();
-        String stringInvertida = revertePalavra.toString();
+        char[] palavraPreparadaArray = palavraPreparada.toCharArray();
+        char[] arrayInvertido = new char[palavraPreparada.length()];
 
-        return stringInvertida.equals(palavraPreparada);
+        for (int i = 0; i < palavraPreparada.length(); i++) {
+            arrayInvertido[i] = palavraPreparadaArray[palavraPreparada.length() - 1 - i];
+        }
+
+        return Arrays.equals(arrayInvertido,palavraPreparadaArray);
     }
 
 }
