@@ -4,13 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Palindrono palindrono = new Palindrono();
+        Palindromo palindromo = new Palindromo();
 
         //essa deve retornar que é palindromo
-        palindrono.validarPalindromo("arara");
+        palindromo.validarPalindromo("arara");
 
         //essa deve retornar que não palindromo
-        palindrono.validarPalindromo("carro");
+        palindromo.validarPalindromo("carro");
 
     }
 
