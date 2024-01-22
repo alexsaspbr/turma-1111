@@ -8,11 +8,11 @@ public class Main {
         String result;
 
         //essa deve retornar que é palindromo
-        result = palindrono.validarPalindromo("alala");
+        result = palindrono.validarPalindromo("arara");
         System.out.println(result);
 
         //essa deve retornar que não palindromo
-        result = palindrono.validarPalindromo("carros");
+        result = palindrono.validarPalindromo("carro");
         System.out.println(result);
     }
 
