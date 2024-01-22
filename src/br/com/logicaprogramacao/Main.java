@@ -7,10 +7,10 @@ public class Main {
         Palindrono palindrono = new Palindrono();
 
         //essa deve retornar que é palindromo
-        palindrono.validarPalindromo("arara");
+        System.out.println(palindrono.validarPalindromo("arara"));
 
         //essa deve retornar que não palindromo
-        palindrono.validarPalindromo("carro");
+        System.out.println(palindrono.validarPalindromo("carro"));
 
     }
 
