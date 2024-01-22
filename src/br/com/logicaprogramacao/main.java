@@ -1,16 +1,14 @@
-package br.com.logicaprogramacao;
-
-public class Main {
+public class main {
 
     public static void main(String[] args) {
 
-        Palindrono palindrono = new Palindrono();
+        Palindromo palindromo = new Palindromo();
 
         //essa deve retornar que é palindromo
-        palindrono.validarPalindromo("arara");
+        System.out.println(palindromo.validarPalindromo("arara"));
 
         //essa deve retornar que não palindromo
-        palindrono.validarPalindromo("carro");
+        System.out.println(palindromo.validarPalindromo("carro"));
 
     }
 
