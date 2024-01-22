@@ -6,7 +6,7 @@ public class Palindrono {
         if (checarPalindromo(palavra)) {
             return String.format("A palavra %s é um palíndromo", palavra);
         } else {
-            return String.format("A palavra %s não é um palíndromo", palavra);
+            return String.format("A palavra %s nao é um palíndromo", palavra);
         }
 
     }

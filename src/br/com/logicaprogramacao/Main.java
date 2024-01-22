@@ -10,7 +10,7 @@ public class Main {
         palindrono.validarPalindromo("arara");
         System.out.println(palindrono.validarPalindromo("arara"));
 
-        //essa deve retornar que não palindromo
+        //essa deve retornar não palindromo
         palindrono.validarPalindromo("carro");
         System.out.println(palindrono.validarPalindromo("carro"));
 
