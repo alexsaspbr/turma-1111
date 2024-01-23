@@ -17,7 +17,7 @@ public class Aula {
         //sobrescrita - OK
         //tratamento de erros - OK
         //debugging - OK
-        //git
+        //git - OK
         //arquivos
         //stream
 
