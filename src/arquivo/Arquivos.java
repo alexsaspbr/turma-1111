@@ -1,6 +1,8 @@
 package arquivo;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Arquivos {
@@ -80,18 +82,19 @@ public class Arquivos {
 
     }
 
-    private static void readFileWithScanner(File file) {
-
+    private static List<Telefone> readFileWithScanner(File file) {
+        List<Telefone> telefones = new ArrayList<>();
         Scanner scanner = null;
         try {
             scanner = new Scanner(file);
             while (scanner.hasNext()) {
-                System.out.println(scanner.nextLine());
+                String[] dadosTelefone = scanner.nextLine().split("\\|");
+                Telefone telefone = new Telefone(Integer.valueOf(dadosTelefone[0]), dadosTelefone[1], dadosTelefone[2]);
+                telefones.add(telefone);
             }
-            scanner.close();
+            return telefones;
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-        } finally {
         }
 
 
