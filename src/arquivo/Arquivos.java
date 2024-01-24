@@ -18,9 +18,17 @@ public class Arquivos {
 
         //readFileWithFileReader(telefone);
         readFileWithScanner(telefone);
+        escreverArquivo(telefone, new Telefone(2, "82", "977774545"));
+        escreverArquivo(telefone, new Telefone(3, "21", "956563232"));
 
         //threads();
 
+        criarArquivoContato();
+
+
+    }
+
+    private static void criarArquivoContato() {
         File contato = new File(PATH_CONTATO);
 
         if(!contato.exists()) {
@@ -30,7 +38,20 @@ public class Arquivos {
                 throw new RuntimeException(e);
             }
         }
+    }
 
+    private static void escreverArquivo(File file, Telefone telefone) {
+
+        try {
+            String linha = String.format("%d|%s|%s", telefone.id(), telefone.ddd(), telefone.numero());
+            FileWriter fileWriter = new FileWriter(file, true);
+            BufferedWriter bw = new BufferedWriter(fileWriter);
+            bw.newLine();
+            bw.write(linha);
+            bw.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
